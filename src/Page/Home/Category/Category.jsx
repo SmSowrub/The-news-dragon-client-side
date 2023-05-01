@@ -1,12 +1,18 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
+import CartCategory from '../CartCategory/CartCategory';
 
 const Category = () => {
-    const {id}=useParams()
+    const {id}=useParams();
+    const CategoryNews =useLoaderData()
+    console.log(CategoryNews);
     return (
         <div>
 
-            <h3>this is category:{id}</h3>
+            <h3>this is category:{CategoryNews.length}</h3>
+            {
+                CategoryNews.map(news=> <CartCategory key={news.id} news={news}></CartCategory>)
+            }
         </div>
     );
 };
