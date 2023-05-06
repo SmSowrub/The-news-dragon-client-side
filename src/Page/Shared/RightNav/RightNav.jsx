@@ -6,10 +6,10 @@ import './RightNav.css'
 
 const RightNav = () => {
     return (
-        <div className='rightNav'>
+        <div style={{ height:'100vh', overflow:'scroll'}} className='rightNav'>
             <h3 className='my-4'>Login with</h3>
-            <Button className='mb-2 px-5' variant="outline-primary"><FaGoogle /> Login with Google</Button>
-            <Button className='mb-4 px-5' variant="outline-secondary"><FaGithub /> Login with Github</Button>
+            <Button className='mb-2 px-4 w-100' variant="outline-primary"><FaGoogle /> Login with Google</Button>
+            <Button className='mb-4 px-4 w-100' variant="outline-secondary"><FaGithub /> Login with Github</Button>
             <div>
                 <h4>Find Us On</h4>
                 <ListGroup>

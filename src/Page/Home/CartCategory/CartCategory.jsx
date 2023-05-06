@@ -34,6 +34,7 @@ const CartCategory = ({ news }) => {
                     <div className='d-flex alien-items-center'>
                         <Rating className='text-warning me-2'
                             placeholderRating={rating?.number}
+                            readonly
                             emptySymbol={<FaRegStar />}
                             placeholderSymbol={<FaStar />}
                             fullSymbol={<FaStar />}

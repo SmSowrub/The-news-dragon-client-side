@@ -7,9 +7,9 @@ const Category = () => {
     const CategoryNews =useLoaderData()
     console.log(CategoryNews);
     return (
-        <div>
+        <div style={{ height:'100vh', overflow:'scroll'}}>
 
-            <h3>this is category:{CategoryNews.length}</h3>
+        {id && <h3>this is category:{CategoryNews.length}</h3>}
             {
                 CategoryNews.map(news=> <CartCategory key={news.id} news={news}></CartCategory>)
             }
